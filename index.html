@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* change background color in different sections */
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('#navBar').onmouseover = function () {
+                    document.querySelector('#navBar').style.opacity = 1;
+                };
+                document.querySelector('#navBar').onmouseout = function () {
+                    document.querySelector('#navBar').style.opacity = 0.5;
+                };
+            });
+        </script>
+        <style>
+            html            {scroll-behavior: smooth;}
+            body            {margin: auto; width: 70%; background-color: rgb(63, 192, 192); text-align: center;}
+            .contents       {background-color: black; min-height: 70vh;}
+            #navBar         {position: sticky; top: 5px; background-color: white; z-index: 1; opacity: 0.5;}
+            #contactMe      {text-align: right; background-color: green; position: absolute; right: 0px;}
+            h1              {padding:10px; color: blue;}
+            p               {margin: auto; width: 80%; color: red;}
+            #imgblock       {padding: 15px;}
+            img             {height: 50%; width: 33%}
+        </style>
+    </head>
+    <body>
+        <!-- floating nav bar -->   
+        <div id="navBar">
+                <a href="#aboutMe">About me</a>
+                <a href="#hobbies">Hobbies</a>
+                <a id="an1" href="#thirdDiv">My projects</a>
+                <!-- you need an onclick event to make a button act like a link -->
+                <button id="contactMe" onclick="window.location.href='mailto:armandoff91@gmail.com'">Email me</button>
+            </div>
+        </div>
+
+        <!-- Contact me -->
+        <!-- unhide when clicked in navBar-->
+        <!-- float in the right -->
+
+        <div id="contentblock">
+        <!-- before bootcamp -->
+            <div class="contents" id="aboutMe">
+                <h1>Albert Au-Yeung, HK based developer</h1>
+                <p>There will be a paragraph here. Let this be a very long paragraph. Let this be a very long paragraph. Let this be a very long paragraph. Let this be a very long paragraph. Let this be a very long paragraph. Let this be a very long paragraph. Let this be a very long paragraph. Let this be a very long paragraph.</p>
+            </div>
+            
+            <!-- hobbie -->
+            <div class="contents" id="hobbies">
+                <h1>Hobbies</h1>
+                <p>There will be a paragraph here. Let this be a very long paragraph.Let this be a very long paragraph.Let this be a very long paragraph.Let this be a very long paragraph.Let this be a very long paragraph.Let this be a very long paragraph.Let this be a very long paragraph. Let this be a very long paragraph. An even longer paragraph. An even longer paragraph. An even longer paragraph. An even longer paragraph. An even longer paragraph.</p>
+                <!-- pictures -->
+                <!-- resizing images: -->
+                <div id="imgblock">   
+                    <img src="./assets/pic1.jpg">
+                    <img src="./assets/pic2.jpg">
+                    <img src="./assets/pic3.jpg">
+                    <img src="./assets/pic4.jpg">
+                    <img src="./assets/pic5.jpg">
+                </div>
+                <!-- enlarge when clicked on -->
+            </div>
+
+            <!-- third div -->
+            <div class="contents" id="thirdDiv">
+                <h1>My Projects</h1>
+                <p>There will be a paragraph here.</p>
+            </div>
+        </div>
+    </body>
+</html>
