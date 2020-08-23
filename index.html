@@ -31,7 +31,7 @@
             .container      {float: left; margin: 5% 5% 10% 5%; width: 40%}
             .textbox        {text-align: justify; margin: 5%}
             /* static height of card will cause problem when scaling */
-            a               {margin: 0% 10% 0% 10%; color: #65dc98;}
+            a               {margin: 0% 5% 0% 5%; color: #65dc98;}
             .card           {height: 150px; margin: 0 10% 2% 10%; background-color: rgba(0, 0, 0, 0);}
             .imgWrapper     {float: left; height: 100%;}
             .description    {float: left; height: 100%; margin: 1% 0% 0% 5%; text-align: justify;}
@@ -45,6 +45,7 @@
                 <a href="#a_aboutMe">About me</a>
                 <a href="#a_hobbies">Hobbies</a>
                 <a href="#a_thirdDiv">My projects</a>
+                <a href="#a_gallery">Gallery</a>
                 <!-- you need an onclick event to make a button act like a link -->
                 <button id="contactMe" onclick="window.location.href='mailto:armandoff91@gmail.com'">Email me</button>
             </div>
@@ -128,6 +129,7 @@
                 <!-- pictures -->
                 <!-- resizing images: -->
             <div class="contents" id="gallery">
+                <div class="scrollAnchor" id="a_gallery"></div>
                 <h1>Gallery</h1>
                 <div id="galleryblock">   
                     <img class="galleryimg" src="./assets/gal1.jpg">
