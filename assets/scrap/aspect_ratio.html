@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* deflaut value of width of div is 100% of screen */
+            /* deflaut value of height of div is 0, and it expands according to its child  */
+            #parent     {background-color: green; width: 50%;}
+            /* padding-bottom expands 500px(100% of parents width) */
+            /* deflault value of position is static */
+            #child      {position: relative; background-color: red; padding-bottom: 100%;}
+            #header     {position: absolute; top: -1%; left: 2%; right: 5%; }
+            #text       {position: absolute; top: 5%; left: 5%; right: 5%; }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="child">
+                <div id="text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</div>
+                <div id="header">Despasito</div>
+            </div>
+        </div>
+    </body>
+</html>
